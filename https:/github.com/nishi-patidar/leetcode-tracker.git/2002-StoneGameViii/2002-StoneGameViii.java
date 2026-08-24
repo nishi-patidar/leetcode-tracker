@@ -1,4 +1,3 @@
-// Last updated: 8/24/2026, 8:51:08 PM
 class Solution {
     public int stoneGameVIII(int[] stones) {
         int n = stones.length;
