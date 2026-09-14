@@ -1,0 +1,7 @@
+// Last updated: 9/14/2026, 11:26:49 AM
+1class Solution {
+2    public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
+3        return rec1[0] < rec2[2] && rec1[2] > rec2[0] && rec1[1] < rec2[3] && rec1[3] > rec2[1];
+4    }
+5}
+6
