@@ -1,0 +1,21 @@
+// Last updated: 10/1/2026, 3:01:32 PM
+class Solution {
+    public int maxDepth(String s) {
+        int max = 0;
+        int cur = 0;
+        char[] arr = s.toCharArray();
+        
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == '(') {
+                cur++;
+                if (cur > max) {
+                    max = cur;
+                }
+            } else if (arr[i] == ')') {
+                cur--;
+            }
+        }
+        
+        return max;
+    }
+}
